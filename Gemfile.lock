@@ -199,7 +199,9 @@ GEM
       mimemagic (~> 0.3.2)
     metaclass (0.0.4)
     method_source (0.9.0)
-    mimemagic (0.3.2)
+    mimemagic (0.3.10)
+      nokogiri (~> 1)
+      rake
     mini_magick (4.8.0)
     mini_mime (1.0.0)
     mini_portile2 (2.3.0)
@@ -244,7 +246,8 @@ GEM
       actionmailer (>= 3, < 6)
       premailer (~> 1.7, >= 1.7.9)
     public_suffix (3.0.2)
-    puma (3.11.4)
+    puma (5.6.7)
+      nio4r (~> 2.0)
     rack (2.0.5)
     rack-protection (2.0.3)
       rack
@@ -401,7 +404,7 @@ DEPENDENCIES
   octokit
   omniauth-github
   premailer-rails
-  puma (~> 3.7)
+  puma (~> 5.6)
   rails (~> 5.2)
   rails-controller-testing
   redcarpet
